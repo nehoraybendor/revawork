@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="worker.css">
+</head>
+<body>
+    <img src="download.jpg" style="width: 100%;" alt="">
+    <nav class="sticky-top navbar bg-light">
+        <div class="container-fluid">
+          <h2 class="navbar-brand fs-1 text">List of <span id="id_spanav"></span> employees</h2>
+          <div class="d-flex" role="search">
+            <input class="form-control me-2" id="input" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" id="btnsc">Search</button>
+          </div>
+        </div>
+      </nav>
+    <main class="container-fluid">
+            <div id="id_row" class="row g-3 justify-content-center">
+                
+            </div>
+    </main>
+</body>
+<script type="module" src="jsWorker/appWorker.js"></script>
+</html>
